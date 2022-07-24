@@ -1,8 +1,21 @@
-const btnMobile = document.querySelector('.mobile');
+let show = true;
 
-function toggleMenu() {
-    const nav = document.querySelector('#nav');
-    nav.classList.toggle('active');
+const menuMobile = document.querySelector('#nav')
+const mobile = document.querySelector('.mobile')
+
+mobile.addEventListener('click', () => {
+
+    document.body.style.overflow = show ? "hidden" : "initial"
+
+    menuMobile.classList.toggle("active", show)
+    show = !show;
+})
+
+const btnInfo = document.querySelector('.info')
+
+function toggleInfo() {
+    const info = document.querySelector('#infos')
+    info.classList.toggle('on');
 }
 
-btnMobile.addEventListener('click', toggleMenu);
+btnInfo.addEventListener('click', toggleInfo)
