@@ -8,45 +8,31 @@
     <title>Contato - DPF</title>
     <link rel="stylesheet" href="../css/index-css.css">
     <link rel="stylesheet" href="../css/contato-css.css">
-    <script src="../js/contato.js"></script>
+
 </head>
 
 <body>
     <header>
         <img src="../imagens/header.jpg" id="header">
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html" class="princ">Início</a></li>
-                <li><a href="#" class="princ">Informações</a>
-                    <ul>
-                        <li>
-                            <a href="concurso.html" id="primeiro">Concurso</a>
-                            <a href="competencias.html" id="borda">Competências</a>
-                            <a href="subdivisão.html" id="borda">Subdivisões</a>
-                            <a href="juridico.html" id="borda">Setor Jurídico</a>
-                            <a href="blog.html" id="borda">Blog de notícias</a>
-                            <a href="altocmd.html">Alto Comando</a>
-                        </li>
-                    </ul>
-                </li>
+        <nav id="nav">
+            <div class="mobile-menu">
+                <div class="mobile">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <h1>Policia Federal</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html" class="princ">Início</a></li>
+                <li><a href="#" class="princ">Informações</a></li>
+                <li><a href="pags/contato.html" class="princ">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div>
-            <!-- 
-            <h1>Formas de Contato:</h1>
-            <h2>Discord de Atendimento:</h2>
-            <p><a href="https://discord.gg/zzvCkqdy4P">https://discord.gg/zzvCkqdy4P</a></p>
-            <h2>TeamSpeak3 da Cidade Moderna:</h2>
-            <p>cidademoderna ou cmrp</p>
-            <h2>Contato Corregedoria:</h2>
-            <p>Discord Diretor Geral - Naval#3382</p>
-            <p>Discord Diretor - NandoFFC#7239</p>
-            <p>Discord Delegado Geral - Sr.Foxy シ#6292</p>
-            -->
-
             <ul>
                 <li>
                     <h1>Formas de Contato:</h1>
@@ -329,7 +315,8 @@
             }
         </style>
     </div>
-
+    <script src="../js/contato.js"></script>
+    <script src="../js/mobile.js"></script>
 </body>
 <script>
     function horario() {
