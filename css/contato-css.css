@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+main>div {
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #ddc34d71;
+}
+
+main h1 {
+    margin-bottom: 15px;
+}
+
+main h2 {
+    color: #D22F2A;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+#esse {
+    margin-bottom: -6px;
+}
+
+main p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+}
+
+/*Fieldset*/
+
+fieldset {
+    margin: 0 auto;
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+fieldset>legend {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+fieldset>input {
+    background-color: #a0a0a0;
+    color: #000000;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/*Botão de copiar*/
+
+.btn1,
+.btn2,
+.btn3 {
+    background-color: #DDC24D;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    line-height: 35px;
+    width: 150px;
+}
+
+.btn1:hover {
+    background-color: #02ce02;
+}
+
+.btn2:hover {
+    background-color: #02ce02;
+}
+
+.btn3:hover {
+    background-color: #02ce02;
+}
