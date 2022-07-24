@@ -112,11 +112,6 @@ nav {
     #nav.active .menu {
         transform: translateX(0);
     }
-
-    #container {
-        max-width: -310px;
-    }
-
 }
 
 /*Imagem rolante*/
