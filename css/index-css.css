@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 :root {
     --cor01: #DDC24D;
@@ -69,15 +70,6 @@ nav {
     display: none;
     cursor: pointer;
 }
-
-.mobile div {
-    width: 32px;
-    height: 2px;
-    background-color: black;
-    margin: 8px;
-}
-
-@media (max-width: 650px) {}
 
 /*Imagem rolante*/
 
@@ -197,7 +189,6 @@ footer>div>p {
     }
 
     nav {
-
         background-color: #DDC24D;
         width: 100%;
         height: 6.5vh;
@@ -207,20 +198,53 @@ footer>div>p {
         display: none;
     }
 
+    .line1,
+    .line2,
+    .line3 {
+        background-color: #000000;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .mobile {
+        width: 40px;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu>h1 {
+        display: flex;
+        margin-left: 10px;
+        font-size: 2em;
+        font-family: 'Kanit', sans-serif;
+    }
+
     .mobile-menu {
         display: flex;
         position: absolute;
         top: 0;
         left: 0;
-        align-items: center;
-        margin: 5px;
+        
+        padding-left: 5px;
     }
 
     nav.active .mobile-menu {
-        background-color: #D22F2A;
+        background-color: #DDC24D;
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;
+        height: 100vh;
+    }
+
+    nav.active .menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 15px;
+        flex-direction: row;
+        align-items: center;
     }
 }
