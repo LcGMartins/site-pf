@@ -80,16 +80,16 @@ nav {
 
 #infos.on {
     background-color: #DDC24D;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
     position: absolute;
-    left: 0;
-    flex-direction: row;
-
-    flex-wrap: wrap;
-    font-size: 1em;
+    left: 28%;
+    right: 28%;
+    max-width: 540px;
     list-style: disc;
-    margin-top: 20px;
-    max-width: 500px;
 }
 
 #infos.on a {
@@ -208,6 +208,66 @@ footer>div>p {
 
 /*Responsividade*/
 
+@media (max-width: 2560px) {
+    #infos.on {
+        background-color: #DDC24D;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        left: 39%;
+        right: 39%;
+        list-style: disc;
+    }
+}
+
+@media (max-width: 1440px) {
+    #infos.on {
+        background-color: #DDC24D;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        list-style: disc;
+    }
+}
+
+@media (max-width: 1024px) {
+    #infos.on {
+        background-color: #DDC24D;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        left: 23%;
+        right: 23%;
+        list-style: disc;
+    }
+}
+
+@media (max-width: 768px) {
+    #infos.on {
+        background-color: #DDC24D;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 10px;
+        position: absolute;
+        left: 30%;
+        right: 30%;
+        list-style: disc;
+    }
+}
+
 @media (max-width: 641px) {
 
     header>img {
@@ -305,6 +365,31 @@ footer>div>p {
 
     /*Informações Menu*/
 
+    #infos.on {
+        display: block;
+        font-size: .5em;
+        list-style: disc;
+        line-height: 5px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #infos.on a {
+        color: #000000;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 1.5em;
+        transition: 0.3s;
+    }
+
+    #infos.on a:hover {
+        text-decoration: underline;
+        color: #D22F2A;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 320px) {
     #infos.on {
         display: block;
         font-size: .5em;
