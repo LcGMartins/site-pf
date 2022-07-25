@@ -47,7 +47,7 @@ nav>h1 {
 nav {
     background-color: #DDC24D;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -61,7 +61,8 @@ nav {
 
 .menu li {
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /*Mobile Menu*/
@@ -75,15 +76,17 @@ nav {
 
 #infos {
     display: none;
+    max-width: 100px;
 }
 
 #infos.on {
-    display: block;
-    font-size: .5em;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    max-width: 300px;
+    font-size: 1em;
     list-style: disc;
-    line-height: 5px;
-    padding: 10px;
-    margin-top: 10px;
+
 }
 
 #infos.on a {
@@ -99,7 +102,6 @@ nav {
     color: #D22F2A;
     border-radius: 8px;
 }
-
 
 /*Imagem rolante*/
 
@@ -297,5 +299,30 @@ footer>div>p {
 
     nav.active .mobile .line3 {
         transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    /*Informações Menu*/
+
+    #infos.on {
+        display: block;
+        font-size: .5em;
+        list-style: disc;
+        line-height: 5px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    #infos.on a {
+        color: #000000;
+        text-decoration: none;
+        padding: 5px;
+        font-size: 1.5em;
+        transition: 0.3s;
+    }
+
+    #infos.on a:hover {
+        text-decoration: underline;
+        color: #D22F2A;
+        border-radius: 8px;
     }
 }
