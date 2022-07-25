@@ -78,32 +78,6 @@ nav {
     display: none;
 }
 
-#infos.on {
-    background-color: #DDC24D;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 10px;
-    position: absolute;
-    left: 28%;
-    right: 28%;
-    list-style: disc;
-}
-
-#infos.on a {
-    color: #000000;
-    text-decoration: none;
-    padding: 5px;
-    font-size: 1.5em;
-}
-
-#infos.on a:hover {
-    text-decoration: underline;
-    color: #D22F2A;
-    border-radius: 8px;
-}
-
 /*Imagem rolante*/
 
 section.img {
@@ -224,29 +198,7 @@ footer>div>p {
     nav {
         background-color: #DDC24D;
         width: 100%;
-        height: 6.5vh;
-    }
-
-    .menu {
-        display: none;
-    }
-
-    nav.active>.menu {
-        display: block;
-        position: absolute;
-        top: 50px;
-        left: 0;
-
-    }
-
-    nav.active>.menu li {
-        margin-bottom: 30px;
-        font-size: 1.5em;
-    }
-
-    nav.active>.menu ul a {
-        display: block;
-        transition-duration: 0.5s;
+        height: 7vh;
     }
 
     .line1,
@@ -260,22 +212,30 @@ footer>div>p {
     }
 
     .mobile {
-        width: 40px;
-        height: 30px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding-left: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 44px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .mobile-menu>h1 {
         display: flex;
-        margin-left: 10px;
+        position: absolute;
+        top: -5px;
+        left: 46px;
+        ;
+        width: 210px;
+        height: 53px;
         font-size: 2em;
         font-family: 'Kanit', sans-serif;
     }
 
     .mobile-menu {
         display: flex;
+        align-items: center;
         position: absolute;
         top: 0;
         left: 0;
@@ -302,14 +262,17 @@ footer>div>p {
         transform: rotate(-45deg) translate(8px, -9px);
     }
 
+    /*MENU*/
+    
+
     /*Informações Menu*/
 
     #infos.on {
         display: block;
-        font-size: .5em;
+        font-size: 0.65em;
         list-style: disc;
         line-height: 5px;
-        padding: 10px;
+        padding: 5px;
         margin-top: 10px;
     }
 
